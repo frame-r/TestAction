@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1587745968442,
+  "lastUpdate": 1587746044782,
   "repoUrl": "https://github.com/frame-r/TestAction",
   "entries": {
     "C++ Benchmark": [
@@ -108,6 +108,42 @@ window.BENCHMARK_DATA = {
             "value": 139994766.39999956,
             "unit": "ns/iter",
             "extra": "iterations: 5\ncpu: 139929461.40000004 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "36999356+frame-r@users.noreply.github.com",
+            "name": "framer",
+            "username": "frame-r"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "63b2692e0775ca6a15c23afc34b786be1b3fc136",
+          "message": "Update README.md",
+          "timestamp": "2020-04-24T23:33:38+07:00",
+          "tree_id": "19c898962e479dc0681f06508e73cda854822d28",
+          "url": "https://github.com/frame-r/TestAction/commit/63b2692e0775ca6a15c23afc34b786be1b3fc136"
+        },
+        "date": 1587746044154,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "mat4_mult",
+            "value": 21915148.49999998,
+            "unit": "ns/iter",
+            "extra": "iterations: 32\ncpu: 21905629.687500004 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_inv",
+            "value": 138450482.00000036,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 138109347.00000003 ns\nthreads: 1"
           }
         ]
       }
