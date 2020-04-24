@@ -5,7 +5,7 @@ json: a.out
 	./a.out --benchmark_format=json | tee benchmark_result.json
 
 a.out: benchmark/build/src/libbenchmark.a bench.cpp ../math/vmath.cpp
-	clang++ -std=c++17 -O3 -I ./benchmark/include -L ./benchmark/build/src/ -pthread bench.cpp -l benchmark
+	clang++ -std=c++17 -O3 -I ./benchmark/include -I ../math -L ./benchmark/build/src/ -pthread bench.cpp -l benchmark
 
 benchmark/build/src/libbenchmark.a: benchmark/build benchmark/googletest
 	cd ./benchmark/build && \
