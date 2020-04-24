@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1587743740589,
+  "lastUpdate": 1587745254965,
   "repoUrl": "https://github.com/frame-r/TestAction",
   "entries": {
     "C++ Benchmark": [
@@ -72,6 +72,42 @@ window.BENCHMARK_DATA = {
             "value": 67.39805036223275,
             "unit": "ns/iter",
             "extra": "iterations: 10998043\ncpu: 67.34143347139121 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaa@bbb.com",
+            "name": "k-payl",
+            "username": "xkarlois"
+          },
+          "committer": {
+            "email": "aaa@bbb.com",
+            "name": "k-payl",
+            "username": "xkarlois"
+          },
+          "distinct": true,
+          "id": "7e3443963e99e3c59f60feb9deb02d8d026853d6",
+          "message": "cpp fix",
+          "timestamp": "2020-04-24T23:17:51+07:00",
+          "tree_id": "77c7e251a24e72b9ee9afb0eba7c3b476b077225",
+          "url": "https://github.com/frame-r/TestAction/commit/7e3443963e99e3c59f60feb9deb02d8d026853d6"
+        },
+        "date": 1587745250008,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "mat4_mult",
+            "value": 9980499.542857148,
+            "unit": "ns/iter",
+            "extra": "iterations: 70\ncpu: 9976324.05714286 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_inv",
+            "value": 62024829.272727735,
+            "unit": "ns/iter",
+            "extra": "iterations: 11\ncpu: 62009312.18181818 ns\nthreads: 1"
           }
         ]
       }
