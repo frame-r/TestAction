@@ -4,7 +4,7 @@
 using namespace math;
 
 float _m[16] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
-static const auto iters = 1'000'000;
+static const auto iters = 2'000'000;
 
 static void mat4_mult(benchmark::State &state) {
   for (auto _ : state) {
