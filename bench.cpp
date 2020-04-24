@@ -3,7 +3,7 @@
 
 using namespace math;
 
-float _m[16] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+float _m[16] = {1,2,3,4,5,6,7,9,9,10,11,12,13,14,15,16};
 const auto iters = 2'000'000;
 
 static void mat4_mult(benchmark::State &state) {
