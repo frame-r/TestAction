@@ -4,22 +4,30 @@
 using namespace math;
 
 float _m[16] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+static const auto iters = 1'000'000;
 
 static void mat4_mult(benchmark::State &state) {
   for (auto _ : state) {
     // Suppress optimization otherwise this line is removed by DCE
     
-	mat4 a(_m);
-	mat4 b(_m);	
-	
-    benchmark::DoNotOptimize(a * b);
+	for (auto i = 0ul; i < iters; ++i)
+	{
+		mat4 a(_m);
+		mat4 b(_m);	
+		
+		benchmark::DoNotOptimize(a * b);
+	}
   }
 }
 
 static void mat4_inv(benchmark::State &state) {
   for (auto _ : state) {
-    mat4 a(_m);
-    benchmark::DoNotOptimize(a.Inverse());
+	
+	for (auto i = 0ul; i < iters; ++i)
+	{
+		mat4 a(_m);
+		benchmark::DoNotOptimize(a.Inverse());
+	}
   }
 }
 
