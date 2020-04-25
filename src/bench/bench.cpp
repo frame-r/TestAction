@@ -8,8 +8,6 @@ float _m[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
 constexpr auto iters = 2'000'000;
 
 static void mat4_mult(benchmark::State &state) {
-  int microseconds = state.range(0);
-  std::chrono::duration<double, std::micro> sleep_duration { static_cast<double>(microseconds) };
   
   for (auto _ : state) {
 	  
@@ -41,7 +39,7 @@ static void mat4_inv(benchmark::State &state) {
 }
 
 // Register the function as a benchmark
-BENCHMARK(mat4_mult)->Range(1, 1<<17)->UseManualTime();
+BENCHMARK(mat4_mult)->UseManualTime();
 BENCHMARK(mat4_inv);
 
 // Run the benchmark
