@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1587748120860,
+  "lastUpdate": 1587813438195,
   "repoUrl": "https://github.com/frame-r/TestAction",
   "entries": {
     "C++ Benchmark": [
@@ -180,6 +180,78 @@ window.BENCHMARK_DATA = {
             "value": 127030668.99999982,
             "unit": "ns/iter",
             "extra": "iterations: 6\ncpu: 126986239.00000001 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaa@bbb.com",
+            "name": "k-payl",
+            "username": "xkarlois"
+          },
+          "committer": {
+            "email": "aaa@bbb.com",
+            "name": "k-payl",
+            "username": "xkarlois"
+          },
+          "distinct": true,
+          "id": "9a708ef569905e57df6815e088f0cec7ab790076",
+          "message": "chrono",
+          "timestamp": "2020-04-25T18:14:13+07:00",
+          "tree_id": "eb169e59c1425b58a1ee060b0fd68589298d88cb",
+          "url": "https://github.com/frame-r/TestAction/commit/9a708ef569905e57df6815e088f0cec7ab790076"
+        },
+        "date": 1587813435117,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "mat4_mult/1/manual_time",
+            "value": 19837273.81081081,
+            "unit": "ns/iter",
+            "extra": "iterations: 37\ncpu: 19829437.2972973 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/8/manual_time",
+            "value": 20015505.43243243,
+            "unit": "ns/iter",
+            "extra": "iterations: 37\ncpu: 19812040.000000004 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/64/manual_time",
+            "value": 19789719.4117647,
+            "unit": "ns/iter",
+            "extra": "iterations: 34\ncpu: 19785617.500000004 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/512/manual_time",
+            "value": 20484911.805555563,
+            "unit": "ns/iter",
+            "extra": "iterations: 36\ncpu: 20475669.02777779 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/4096/manual_time",
+            "value": 21069894.696969703,
+            "unit": "ns/iter",
+            "extra": "iterations: 33\ncpu: 21065839.333333343 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/32768/manual_time",
+            "value": 21462699.060606062,
+            "unit": "ns/iter",
+            "extra": "iterations: 33\ncpu: 21453915.727272734 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_mult/131072/manual_time",
+            "value": 22077762.36363636,
+            "unit": "ns/iter",
+            "extra": "iterations: 33\ncpu: 22055058.484848496 ns\nthreads: 1"
+          },
+          {
+            "name": "mat4_inv",
+            "value": 128052719.99999945,
+            "unit": "ns/iter",
+            "extra": "iterations: 5\ncpu: 127953293.20000005 ns\nthreads: 1"
           }
         ]
       }
